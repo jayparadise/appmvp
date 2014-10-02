@@ -14,10 +14,6 @@ $responsive-width-small: 414px;
 body {
   padding-top: 50px;
   background-color: $background-color;
-  @media (max-width: $responsive-width-medium) {
-	
-
-	}
 }
 
 a {
@@ -59,14 +55,14 @@ a {
 
 .event-holder {
 	position: relative;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
   display: block;
   text-decoration: none;
   color: $main-color;
   &:last-child {
     margin-bottom: 0;
   }
-  @media (max-width: $responsive-width-medium) {
+  @media (max-width: $responsive-width-small) {
 		margin-bottom: 2px;
 
 	}
@@ -88,7 +84,7 @@ a {
   -webkit-filter: brightness(.75);
   filter: brightness(.75);
   //http://bennettfeely.com/filters/
-  @media (max-width: $responsive-width-medium) {
+  @media (max-width: $responsive-width-small) {
 		height: 175px;
 	}	
 }
@@ -127,12 +123,12 @@ a {
 	top: 15px;
 	right: 15px;
 	font-size: 20px;
-  @media (max-width: $responsive-width-medium) {
+  @media (max-width: $responsive-width-small) {
 		top: 10px;
 		right: 10px;
 	}	
 }
-  @media (max-width: $responsive-width-medium) {
+  @media (max-width: $responsive-width-small) {
 		h1 {font-size: 1.5em;}
 		h2 {font-size: 1.25em;}
 		h3, .lead {font-size: 1em;}
