@@ -1,52 +1,113 @@
-/*
-Syntax error: Invalid CSS after "...width-medium) {": expected "}", was "<<<<<<< HEAD"
-        on line 96 of style.scss
+/* Variables */
+/* Mixins */
+/* Global */
+html {
+  font-size: 16px; }
 
-91:   width: 100%;
-92:   -webkit-filter: brightness(.75);
-93:   filter: brightness(.75);
-94:   //http://bennettfeely.com/filters/
-95:   @media (max-width: $responsive-width-medium) {
-96: <<<<<<< HEAD
-97: 		height: 150px;
-98: =======
-99: 		height: 175px;
-100: >>>>>>> master
-101: 	}	
+body {
+  padding-top: 50px;
+  background-color: RGBA(240, 240, 240, 1); }
 
-Backtrace:
-style.scss:96
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:1149:in `expected'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:1080:in `tok!'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:536:in `block'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:349:in `media_directive'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:174:in `special_directive'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:146:in `directive'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:554:in `block_child'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:535:in `block'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:553:in `block_child'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:82:in `stylesheet'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:27:in `parse'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/engine.rb:342:in `_to_tree'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:283:in `block in watch'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...width-medium) {\": expected \"}\", was \"<<<<<<< HEAD\"\A         on line 96 of style.scss\A \A 91:   width: 100%;\A 92:   -webkit-filter: brightness(.75);\A 93:   filter: brightness(.75);\A 94:   //http://bennettfeely.com/filters/\A 95:   @media (max-width: $responsive-width-medium) {\A 96: <<<<<<< HEAD\A 97: 		height: 150px;\A 98: =======\A 99: 		height: 175px;\A 100: >>>>>>> master\A 101: 	}	"; }
+a {
+  text-decoration: none;
+  color: white; }
+  a:hover, a:visited {
+    text-decoration: none;
+    color: white; }
+
+.site-wrapper {
+  border: 1px solid black; }
+
+/* For left side, fixed navbar
+.fixed {
+	position: fixed;
+	top: 50px;
+	border: 1px solid green;
+	height: 100%;
+}
+ */
+/*Nav Bar*/
+.navbar {
+  background-color: RGBA(0, 0, 0, 0.75); }
+
+/* Center Feed */
+.col-centered {
+  float: none;
+  margin: 0 auto;
+  padding: 0; }
+
+.event-holder {
+  position: relative;
+  margin: 0 0 10px 0;
+  display: block;
+  text-decoration: none;
+  color: white; }
+  .event-holder:last-child {
+    margin-bottom: 0; }
+  @media (max-width: 736px) {
+    .event-holder {
+      margin-bottom: 5px; } }
+
+/* .image {
+/*change background image using jquery*/
+/*use image in html: http://jsfiddle.net/audetwebdesign/EGgaN/*/
+/* background: url('http://cdn.gdol.com/app/courses/image/preview/40367.jpg') no-repeat center center;
+ background-repeat: no-repeat;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ min-height: 250px;}*/
+.image img {
+  height: 250px;
+  width: 100%;
+  -webkit-filter: brightness(0.75);
+  filter: brightness(0.75); }
+  @media (max-width: 736px) {
+    .image img {
+      height: 175px; } }
+
+.text-overlay h1, .text-overlay h2, .text-overlay h3, .text-overlay h4, .text-overlay h5, .text-overlay h6, .text-overlay p {
+  margin: 0; }
+
+.event-details {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 90%; }
+
+.business-details {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 70%; }
+
+.tag {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: block;
+  width: 30%;
+  text-align: right; }
+
+.heart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px; }
+  @media (max-width: 736px) {
+    .heart {
+      top: 10px;
+      right: 10px; } }
+
+@media (max-width: 736px) {
+  h1 {
+    font-size: 2em; }
+
+  h2 {
+    font-size: 1.5em; }
+
+  h3, .lead {
+    font-size: 1.25em; }
+
+  p {
+    font-size: 1em; } }
