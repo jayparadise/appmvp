@@ -43,7 +43,7 @@ a {
     margin-bottom: 0; }
   @media (max-width: 736px) {
     .event-holder {
-      margin-bottom: 5px; } }
+      margin-bottom: 2px; } }
 
 /* .image {
 /*change background image using jquery*/
