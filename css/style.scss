@@ -93,7 +93,11 @@ a {
   filter: brightness(.75);
   //http://bennettfeely.com/filters/
   @media (max-width: $responsive-width-medium) {
+<<<<<<< HEAD
 		height: 150px;
+=======
+		height: 175px;
+>>>>>>> master
 	}	
 }
 
@@ -107,35 +111,49 @@ a {
 	position: absolute;
 	top: 10px;
 	left: 10px;
+<<<<<<< HEAD
 	width: 80%;
 
+=======
+	width: 90%;
+>>>>>>> master
 }
+
 .business-details {
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
+	width: 70%;
 }
 
 .tag {
 	position: absolute;
-	top: 10px;
+	bottom: 10px;
 	right: 10px;
 	display: block;
-	width: 15%;
+	width: 30%;
 	text-align: right;
+<<<<<<< HEAD
 	@media (max-width: $responsive-width-medium) {
 		width: 20%;
 	}
+=======
+>>>>>>> master
 }
 
 .heart {
 	position: absolute;
-	bottom: 15px;
+	top: 15px;
 	right: 15px;
 	font-size: 20px;
   @media (max-width: $responsive-width-medium) {
+<<<<<<< HEAD
 		bottom: 10px;
 		right: 20px;
+=======
+		top: 10px;
+		right: 10px;
+>>>>>>> master
 	}	
 }
   @media (max-width: $responsive-width-medium) {
