@@ -1,3 +1,9 @@
+/* Variables */
+/* Mixins */
+/* Global */
+html {
+  font-size: 16px; }
+
 body {
   padding-top: 50px;
   background-color: RGBA(240, 240, 240, 1); }
@@ -12,13 +18,23 @@ a {
 .site-wrapper {
   border: 1px solid black; }
 
+/* For left side, fixed navbar
+.fixed {
+	position: fixed;
+	top: 50px;
+	border: 1px solid green;
+	height: 100%;
+}
+ */
+/*Nav Bar*/
+.navbar {
+  background-color: RGBA(0, 0, 0, 0.75); }
+
+/* Center Feed */
 .col-centered {
   float: none;
   margin: 0 auto;
   padding: 0; }
-
-.navbar {
-  background-color: RGBA(174, 129, 255, 0.75); }
 
 .event-holder {
   position: relative;
@@ -28,6 +44,9 @@ a {
   color: white; }
   .event-holder:last-child {
     margin-bottom: 0; }
+  @media (max-width: 736px) {
+    .event-holder {
+      margin-bottom: 5px; } }
 
 /* .image {
 /*change background image using jquery*/
@@ -43,6 +62,9 @@ a {
   width: 100%;
   -webkit-filter: brightness(0.75);
   filter: brightness(0.75); }
+  @media (max-width: 736px) {
+    .image img {
+      height: 150px; } }
 
 .text-overlay h1, .text-overlay h2, .text-overlay h3, .text-overlay h4, .text-overlay h5, .text-overlay h6, .text-overlay p {
   margin: 0; }
@@ -51,7 +73,8 @@ a {
   position: absolute;
   top: 10px;
   left: 10px;
-  max-width: 80%; }
+  width: 80%;
+  border: 1px solid red; }
 
 .business-details {
   position: absolute;
@@ -64,10 +87,31 @@ a {
   right: 10px;
   display: block;
   width: 15%;
-  text-align: right; }
+  text-align: right;
+  border: 1px solid red; }
+  @media (max-width: 736px) {
+    .tag {
+      width: 20%; } }
 
 .heart {
   position: absolute;
   bottom: 15px;
   right: 15px;
   font-size: 20px; }
+  @media (max-width: 736px) {
+    .heart {
+      bottom: 10px;
+      right: 20px; } }
+
+@media (max-width: 736px) {
+  h1 {
+    font-size: 2em; }
+
+  h2 {
+    font-size: 1.5em; }
+
+  h3, .lead {
+    font-size: 1.25em; }
+
+  p {
+    font-size: 1em; } }

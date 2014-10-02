@@ -1,11 +1,27 @@
+/* Variables */
 
 $main-color: rgba(255,255,255,1);
-$nav-color: RGBA(174, 129, 255, 0.75);
+$nav-color: RGBA(0, 0, 0, .75);
 $background-color: RGBA(240, 240, 240, 1);
+$responsive-width-medium: 736px;
+$responsive-width-small: 414px;
+
+/* Mixins */
+
+
+/* Global */
+
+html {
+	font-size: 16px;
+}
 
 body {
   padding-top: 50px;
   background-color: $background-color;
+  @media (max-width: $responsive-width-medium) {
+	
+
+	}
 }
 
 a {
@@ -21,14 +37,28 @@ a {
   border: 1px solid black;
 }
 
+/* For left side, fixed navbar
+.fixed {
+	position: fixed;
+	top: 50px;
+	border: 1px solid green;
+	height: 100%;
+}
+ */
+
+/*Nav Bar*/
+
+.navbar {
+  background-color: $nav-color;
+}
+
+
+/* Center Feed */
+
 .col-centered {
   float: none;
   margin: 0 auto;
   padding: 0;
-}
-
-.navbar {
-  background-color: $nav-color;
 }
 
 .event-holder {
@@ -40,6 +70,10 @@ a {
   &:last-child {
     margin-bottom: 0;
   }
+  @media (max-width: $responsive-width-medium) {
+		margin-bottom: 5px;
+
+	}
 }
 
 /* .image {
@@ -58,6 +92,9 @@ a {
   -webkit-filter: brightness(.75);
   filter: brightness(.75);
   //http://bennettfeely.com/filters/
+  @media (max-width: $responsive-width-medium) {
+		height: 150px;
+	}	
 }
 
 .text-overlay {
@@ -70,7 +107,8 @@ a {
 	position: absolute;
 	top: 10px;
 	left: 10px;
-	max-width: 80%;
+	width: 80%;
+	border: 1px solid red;
 
 }
 .business-details {
@@ -86,7 +124,10 @@ a {
 	display: block;
 	width: 15%;
 	text-align: right;
-
+	border: 1px solid red;
+	@media (max-width: $responsive-width-medium) {
+		width: 20%;
+	}
 }
 
 .heart {
@@ -94,5 +135,18 @@ a {
 	bottom: 15px;
 	right: 15px;
 	font-size: 20px;
+  @media (max-width: $responsive-width-medium) {
+		bottom: 10px;
+		right: 20px;
+	}	
 }
+  @media (max-width: $responsive-width-medium) {
+		h1 {font-size: 2em;}
+		h2 {font-size: 1.5em;}
+		h3, .lead {font-size: 1.25em;}
+		p {font-size: 1em;}
+	}	
+
+
+
 
