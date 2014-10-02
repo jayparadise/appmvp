@@ -1,0 +1,98 @@
+
+$main-color: rgba(255,255,255,1);
+$nav-color: RGBA(174, 129, 255, 0.75);
+$background-color: RGBA(240, 240, 240, 1);
+
+body {
+  padding-top: 50px;
+  background-color: $background-color;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+  &:hover, &:visited {
+    text-decoration: none;
+    color: $main-color;
+  }
+}
+
+.site-wrapper {
+  border: 1px solid black;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar {
+  background-color: $nav-color;
+}
+
+.event-holder {
+	position: relative;
+  margin: 0 0 10px 0;
+  display: block;
+  text-decoration: none;
+  color: $main-color;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* .image {
+/*change background image using jquery*/
+/*use image in html: http://jsfiddle.net/audetwebdesign/EGgaN/*/
+/* background: url('http://cdn.gdol.com/app/courses/image/preview/40367.jpg') no-repeat center center;
+ background-repeat: no-repeat;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ min-height: 250px;}*/
+
+.image img {
+  height: 250px;
+  width: 100%;
+  -webkit-filter: brightness(.75);
+  filter: brightness(.75);
+  //http://bennettfeely.com/filters/
+}
+
+.text-overlay {
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+}
+
+.event-details {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	max-width: 80%;
+
+}
+.business-details {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.tag {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	width: 15%;
+	text-align: right;
+
+}
+
+.heart {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	font-size: 20px;
+}
+

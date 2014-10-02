@@ -1,0 +1,73 @@
+body {
+  padding-top: 50px;
+  background-color: RGBA(240, 240, 240, 1); }
+
+a {
+  text-decoration: none;
+  color: white; }
+  a:hover, a:visited {
+    text-decoration: none;
+    color: white; }
+
+.site-wrapper {
+  border: 1px solid black; }
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+  padding: 0; }
+
+.navbar {
+  background-color: RGBA(174, 129, 255, 0.75); }
+
+.event-holder {
+  position: relative;
+  margin: 0 0 10px 0;
+  display: block;
+  text-decoration: none;
+  color: white; }
+  .event-holder:last-child {
+    margin-bottom: 0; }
+
+/* .image {
+/*change background image using jquery*/
+/*use image in html: http://jsfiddle.net/audetwebdesign/EGgaN/*/
+/* background: url('http://cdn.gdol.com/app/courses/image/preview/40367.jpg') no-repeat center center;
+ background-repeat: no-repeat;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ min-height: 250px;}*/
+.image img {
+  height: 250px;
+  width: 100%;
+  -webkit-filter: brightness(0.75);
+  filter: brightness(0.75); }
+
+.text-overlay h1, .text-overlay h2, .text-overlay h3, .text-overlay h4, .text-overlay h5, .text-overlay h6, .text-overlay p {
+  margin: 0; }
+
+.event-details {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: 80%; }
+
+.business-details {
+  position: absolute;
+  bottom: 10px;
+  left: 10px; }
+
+.tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  width: 15%;
+  text-align: right; }
+
+.heart {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 20px; }
