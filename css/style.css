@@ -59,7 +59,7 @@ a {
   right: 0; }
   @media (max-width: 736px) {
     .search {
-      margin-right: 10px; } }
+      margin-right: 0px; } }
 
 .location {
   width: 100%;
