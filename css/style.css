@@ -53,15 +53,13 @@ a {
   text-align: left; }
   @media (max-width: 736px) {
     .home {
-      padding-left: 10px;
-      border: 1px solid yellow; } }
+      padding-left: 10px; } }
 
 .search {
   right: 0; }
   @media (max-width: 736px) {
     .search {
-      padding-right: 10px;
-      border: 1px solid yellow; } }
+      margin-right: 10px; } }
 
 .location {
   width: 100%;
