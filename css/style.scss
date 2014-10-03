@@ -1,8 +1,8 @@
 /* Variables */
 
 $main-color: rgba(255,255,255,1);
-$nav-background: RGBA(0, 0, 0, .75);
-$nav-color: RGBA(255, 100, 0, 1);
+$nav-background: RGBA(255, 100, 0, .8);
+$nav-color: black;
 $background-color: RGBA(240, 240, 240, 1);
 $responsive-width-medium: 736px;
 $responsive-width-small: 414px;
@@ -55,6 +55,10 @@ a {
   width: 100%;
   height: 50px;
   z-index: 1000;
+  a {
+  		color: $nav-color;
+
+  }
 }
 
 .home, .location, .search {
@@ -100,6 +104,7 @@ a {
 
 .location-date {
 	font-size: .75em;
+	line-height: 1em;
 }
 
 
