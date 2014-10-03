@@ -1,7 +1,8 @@
 /* Variables */
 
 $main-color: rgba(255,255,255,1);
-$nav-color: RGBA(0, 0, 0, .75);
+$nav-background: RGBA(0, 0, 0, .75);
+$nav-color: RGBA(255, 100, 0, 1);
 $background-color: RGBA(240, 240, 240, 1);
 $responsive-width-medium: 736px;
 $responsive-width-small: 414px;
@@ -45,9 +46,65 @@ a {
 
 /*Nav Bar*/
 
-.navbar {
-  background-color: $nav-color;
+
+.nav-header {
+  background-color: $nav-background;
+  color: $nav-color;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
 }
+
+.home, .location, .search {
+	position: absolute;
+}
+
+.home, .search {
+	font-size: 2em;
+	width: 20%;
+	height: 100%;
+	padding: 8px 50px;
+	z-index: 100;
+
+}
+
+.home {
+	text-align: left;
+	@media (max-width: $responsive-width-medium) {
+		padding-left: 5px;
+	}
+}
+
+.search {
+	right: 0;
+	text-align: right;
+	@media (max-width: $responsive-width-medium) {
+		padding-right: 0;
+		margin-right: 5px;
+	}	
+}
+
+.location {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	text-align: center;
+	p {
+		margin: 0;
+	}
+	a {
+	color: $nav-color;
+	font-size: 1.5em;
+	display: inline-block;
+	}
+}
+
+.location-date {
+	font-size: .75em;
+}
+
 
 
 /* Center Feed */
@@ -131,8 +188,4 @@ a {
 	height: 1000px;
 }
 
-.home {
-	font-size: 2em;
-	margin: 10px 100px;
-}
 
