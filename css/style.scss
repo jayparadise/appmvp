@@ -133,8 +133,12 @@ a {
 .image img {
   height: 250px;
   width: 100%;
+  -moz-filter: brightness(.75);
+  -o-filter: brightness(.75);
+  -ms-filter: brightness(.75);
   -webkit-filter: brightness(.75);
   filter: brightness(.75);
+
   //http://bennettfeely.com/filters/
   @media (max-width: $responsive-width-small) {
 		height: 175px;

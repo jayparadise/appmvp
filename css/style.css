@@ -99,6 +99,9 @@ a {
 .image img {
   height: 250px;
   width: 100%;
+  -moz-filter: brightness(0.75);
+  -o-filter: brightness(0.75);
+  -ms-filter: brightness(0.75);
   -webkit-filter: brightness(0.75);
   filter: brightness(0.75); }
   @media (max-width: 414px) {
