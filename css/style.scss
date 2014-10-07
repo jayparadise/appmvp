@@ -1,7 +1,7 @@
 /* Variables */
 
 $main-color: rgba(255,255,255,1);
-$nav-background: RGBA(255, 100, 0, .8);
+$nav-background: RGBA(255, 164, 0, .8);
 $nav-color: black;
 $background-color: RGBA(240, 240, 240, 1);
 $responsive-width-medium: 736px;
@@ -191,5 +191,56 @@ a {
 	border: 1px solid black;
 	height: 1000px;
 }
+
+.business-header {
+	position: relative;
+  display: block;
+  text-decoration: none;
+  color: $main-color;
+  border: 1px solid red;
+}
+
+.business-page-name {
+	position: absolute;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	padding: 20px 50px;
+}
+
+.business-header-button {
+	position: absolute;
+	top: 0;
+	padding: 20px 10px 0 10px;
+	font-size: 2em;
+	@media (max-width: $responsive-width-small) {
+		font-size: 1.5em;
+	}
+}
+
+.bell {
+	right: 0;
+}
+
+.business-rating {
+	position: absolute;
+	bottom: 0;
+	width: 215px; 
+	height: 16px;
+	background: url(../images/stars-map.png) no-repeat 0 -152px;
+	margin: 10px;
+}
+
+.business-rating-text {
+	display: inline-block;
+	margin: 0;
+	position: absolute;
+	bottom: -2px;
+	left: 90px;
+}
+
+
+
+
 
 
