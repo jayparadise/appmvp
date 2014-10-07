@@ -110,6 +110,9 @@ a {
 
 .text-overlay h1, .text-overlay h2, .text-overlay h3, .text-overlay h4, .text-overlay h5, .text-overlay h6, .text-overlay p {
   margin: 0; }
+.text-overlay .lead {
+  font-size: 20px;
+  font-weight: normal; }
 
 .event-details {
   position: absolute;
@@ -141,9 +144,9 @@ a {
       top: 10px;
       right: 10px; } }
 
-/* Business Page */
+/* Business Page Header */
 @media (max-width: 736px) {
-  .business-page-header {
+  .business-page-navbar {
     display: none; } }
 
 .business-wrapper {
@@ -157,8 +160,7 @@ a {
   position: relative;
   display: block;
   text-decoration: none;
-  color: white;
-  border: 1px solid red; }
+  color: white; }
 
 .business-page-name {
   position: absolute;
@@ -170,14 +172,18 @@ a {
 .business-header-button {
   position: absolute;
   top: 0;
-  padding: 20px 10px 0 10px;
-  font-size: 2em; }
+  font-size: 2em;
+  top: 22px; }
   @media (max-width: 414px) {
     .business-header-button {
-      font-size: 1.5em; } }
+      font-size: 1.5em;
+      top: 18px; } }
+
+.back-arrow {
+  left: 10px; }
 
 .bell {
-  right: 0; }
+  right: 10px; }
 
 .business-rating {
   position: absolute;
@@ -193,3 +199,51 @@ a {
   position: absolute;
   bottom: -2px;
   left: 90px; }
+
+/* Business Page Event Section */
+.clearfix:after {
+  content: '.';
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden; }
+
+.tabs-menu {
+  background: RGBA(0, 116, 162, 1); }
+
+.tabs-menu ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  list-style: none;
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+  .tabs-menu ul li {
+    display: table-cell; }
+  .tabs-menu ul a {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1em; }
+    @media (max-width: 414px) {
+      .tabs-menu ul a {
+        font-size: 1em; } }
+
+a.active-tab-menu {
+  background-color: RGBA(240, 240, 240, 1);
+  color: RGBA(0, 116, 162, 1); }
+
+/* Content in Tabs */
+.tabs {
+  display: none;
+  padding: 30px;
+  border: 1px solid red; }
+
+.today-tab {
+  display: block; }

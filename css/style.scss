@@ -4,6 +4,7 @@ $main-color: rgba(255,255,255,1);
 $nav-background: RGBA(255, 164, 0, .8);
 $nav-color: black;
 $background-color: RGBA(240, 240, 240, 1);
+$tab-color: RGBA(0, 116, 162, 1);
 $responsive-width-medium: 736px;
 $responsive-width-small: 414px;
 
@@ -147,6 +148,10 @@ a {
   h1, h2, h3, h4, h5, h6, p {
     margin: 0;
   }
+  .lead {
+  	font-size: 20px;
+  	font-weight: normal;
+  }
 }
 
 .event-details {
@@ -183,9 +188,9 @@ a {
 	}	
 }
 
-/* Business Page */
+/* Business Page Header */
 
-.business-page-header {
+.business-page-navbar {
 	@media (max-width: $responsive-width-medium) {
 		display: none;
 	}
@@ -204,7 +209,6 @@ a {
   display: block;
   text-decoration: none;
   color: $main-color;
-  border: 1px solid red;
 }
 
 .business-page-name {
@@ -218,15 +222,20 @@ a {
 .business-header-button {
 	position: absolute;
 	top: 0;
-	padding: 20px 10px 0 10px;
 	font-size: 2em;
+	top: 22px;
 	@media (max-width: $responsive-width-small) {
 		font-size: 1.5em;
+		top: 18px;
 	}
 }
 
+.back-arrow {
+	left: 10px;
+}
+
 .bell {
-	right: 0;
+	right: 10px;
 }
 
 .business-rating {
@@ -246,6 +255,61 @@ a {
 	left: 90px;
 }
 
+
+/* Business Page Event Section */
+.clearfix:after {
+  content: '.';
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.tabs-menu {
+  background: $tab-color;
+}
+
+.tabs-menu ul {
+	  margin:  0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    list-style: none;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+		li {
+			display: table-cell;
+		}
+		a {
+			display: block;
+			font-size: 1.5em;
+  		font-weight: bold;
+  		text-transform: uppercase;
+  		padding:1em;
+			@media (max-width: $responsive-width-small) {
+				font-size: 1em;
+			}
+		}
+}
+
+a.active-tab-menu {
+	background-color: $background-color;
+	color: $tab-color;
+}
+
+/* Content in Tabs */
+.tabs {
+  display: none;
+  padding: 30px;
+  border: 1px solid red;
+}
+.today-tab {
+  display: block;
+}
 
 
 

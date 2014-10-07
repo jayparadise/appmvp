@@ -13,7 +13,7 @@
 
 <!-- Nav Bar -->
 
-    <nav class="nav-header business-page-header">
+    <nav class="nav-header business-page-navbar">
     	<div class="home">
     		<a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
     	</div>
@@ -33,26 +33,78 @@
     <div class="container-fluid site-wrapper">
       <div class="row">
         <div class="col-md-5 col-sm-7 col-centered business-wrapper">
+
+<!-- Business Header -->
         	<div class="business-header">
 	        	<div class="image">
 	          	<img src="images/northridge.jpg">
 	          </div>
 	          <div class="text-overlay">
 	          	<h1 class="business-page-name">North Ridge Golf Club</h1>
-	          	<a href="index.html" class="business-header-button"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	          	<a href="index.html" class="business-header-button back-arrow"><span class="glyphicon glyphicon-chevron-left"></span></a>
 	          	<a href="#" class="business-header-button bell"><span class="glyphicon glyphicon-bell"></span></a>
 	          	<a href="http://www.yelp.com/biz/pine-valley-golf-course-and-pro-shop-southington" target="_blank" class="business-rating"><span class="business-rating-text">23 reviews on yelp</span></a>
-							
 	       		</div>
        		</div>
-        </div>
-      </div>
-    </div>
+
+<!-- Event Section -->
+
+					    <div class="tabs-menu clearfix">
+					      <ul>
+					        <li><a href="#" data-tab="tab1">S</a></li>
+					        <li><a href="#" data-tab="tab2">M</a></li>
+					        <li><a href="#" data-tab="tab3" class="active-tab-menu">T</a></li>
+					        <li><a href="#" data-tab="tab4">W</a></li>
+					        <li><a href="#" data-tab="tab5">T</a></li>
+					        <li><a href="#" data-tab="tab6">F</a></li>
+					        <li><a href="#" data-tab="tab7">S</a></li>
+					        <li><a href="#" data-tab="tab8"><span class="glyphicon glyphicon-calendar"></span></a></li>
+					      </ul>
+					    </div> <!-- tabs-menu -->
+					    
+					    <div class="tab1 tabs">
+							<p>Sunday's Specials</p>
+					    </div> <!-- .tab1 -->
+					    <div class="tab2 tabs">
+							<p>Monday's specials</p>
+					    </div> <!-- .tab2 -->					    
+					    <div class="tab3 tabs today-tab ">
+							<p>Tuesday's specials</p>
+
+					    </div> <!-- .tab3 -->
+					    <div class="tab4 tabs">
+							<p>Wednesday's specials</p>
+
+					    </div> <!-- .tab4 -->
+					    <div class="tab5 tabs">
+							<p>Thursday's specials</p>
+
+					    </div> <!-- .tab5 -->
+					    <div class="tab6 tabs">
+							<p>Friday's specials</p>
+
+					    </div> <!-- .tab6 -->
+					    <div class="tab7 tabs">
+							<p>Saturday's specials</p>
+
+					    </div> <!-- .tab7 -->
+					    <div class="tab8 tabs calendar">
+							<p>Future Events</p>
+					    </div> <!-- .tab8 -->
+
+
+
+<!-- End of Page Div's -->
+
+        </div> <!-- center column -->
+      </div> <!-- Row -->
+    </div> <!-- Site-wrapper -->
 
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/business_tabs.js"></script>
   </body>
 </html>
