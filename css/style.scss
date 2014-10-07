@@ -56,7 +56,7 @@ a {
   height: 50px;
   z-index: 1000;
   a {
-  		color: $nav-color;
+  	color: $nav-color;
   }
 }
 
@@ -104,8 +104,6 @@ a {
 	font-size: .75em;
 	line-height: 1em;
 }
-
-
 
 /* Center Feed */
 
@@ -187,9 +185,18 @@ a {
 
 /* Business Page */
 
+.business-page-header {
+	@media (max-width: $responsive-width-medium) {
+		display: none;
+	}
+}
+
 .business-wrapper {
 	border: 1px solid black;
 	height: 1000px;
+	@media (max-width: $responsive-width-medium) {
+		margin-top: -50px;
+	}
 }
 
 .business-header {

@@ -142,9 +142,16 @@ a {
       right: 10px; } }
 
 /* Business Page */
+@media (max-width: 736px) {
+  .business-page-header {
+    display: none; } }
+
 .business-wrapper {
   border: 1px solid black;
   height: 1000px; }
+  @media (max-width: 736px) {
+    .business-wrapper {
+      margin-top: -50px; } }
 
 .business-header {
   position: relative;
