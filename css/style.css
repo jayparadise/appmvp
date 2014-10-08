@@ -291,10 +291,42 @@ a.active-tab-menu {
       top: 8px; } }
 
 .event-text-container {
-  padding: 10px;
+  padding: 10px; }
+
+.calendar-event .event-text-container {
   margin: 10px;
   background-color: RGBA(240, 240, 240, 1); }
 
 .full-image {
   width: 100%;
   margin: 10px 0 0 0; }
+
+.map-container {
+  margin: 10px 0 0 0;
+  padding: 0; }
+
+.map {
+  width: 100%;
+  height: 250px;
+  border-left: none;
+  border-top: none; }
+
+.business-footer {
+  margin-top: -5px; }
+  .business-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .business-footer ul li {
+      text-align: center;
+      height: 40px;
+      padding: 0;
+      margin: 0;
+      line-height: 40px; }
+      .business-footer ul li:nth-child(2) {
+        border-left: 1px solid black;
+        border-right: 1px solid black; }
+    .business-footer ul .address {
+      line-height: 20px; }
+    .business-footer ul a {
+      color: blue; }
