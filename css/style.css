@@ -294,7 +294,7 @@ a.active-tab-menu {
   padding: 10px; }
 
 .calendar-event .event-text-container {
-  margin: 10px;
+  margin: 10px 0;
   background-color: RGBA(240, 240, 240, 1); }
 
 .full-image {
