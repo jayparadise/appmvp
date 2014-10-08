@@ -328,6 +328,26 @@ a.active-tab-menu {
   display: block;
 }
 
+.full-image {
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+
+.small-event-image {
+	float: right;
+	width: 30%;
+}
+
+.event-text-container {
+	padding: 10px;
+	h2 {
+		margin: 0;
+	}
+}
+
+
+/*Calendar Tab*/
+
 .calendar-event {
 	position: relative;
 	background-color: $main-color;
@@ -358,10 +378,6 @@ a.active-tab-menu {
 	}	
 }
 
-.event-text-container {
-	padding: 10px;
-}
-
 .calendar-event .event-text-container {
 	background-color: $background-color;
 	margin: 0 10px;
@@ -370,10 +386,7 @@ a.active-tab-menu {
 	}
 }
 
-.full-image {
-	width: 100%;
-	margin: 10px 0 0 0;
-}
+/*Map and Footer Section*/
 
 .map-container {
 	margin: 10px 0 0 0;

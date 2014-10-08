@@ -261,6 +261,20 @@ a.active-tab-menu {
 .today-tab {
   display: block; }
 
+.full-image {
+  width: 100%;
+  margin: 10px 0 0 0; }
+
+.small-event-image {
+  float: right;
+  width: 30%; }
+
+.event-text-container {
+  padding: 10px; }
+  .event-text-container h2 {
+    margin: 0; }
+
+/*Calendar Tab*/
 .calendar-event {
   position: relative;
   background-color: white;
@@ -287,9 +301,6 @@ a.active-tab-menu {
       font-size: 1.25em;
       top: 8px; } }
 
-.event-text-container {
-  padding: 10px; }
-
 .calendar-event .event-text-container {
   background-color: RGBA(220, 220, 220, 1);
   margin: 0 10px; }
@@ -297,10 +308,7 @@ a.active-tab-menu {
     .calendar-event .event-text-container {
       margin: 0; } }
 
-.full-image {
-  width: 100%;
-  margin: 10px 0 0 0; }
-
+/*Map and Footer Section*/
 .map-container {
   margin: 10px 0 0 0;
   padding: 0; }
