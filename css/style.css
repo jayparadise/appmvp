@@ -313,7 +313,8 @@ a.active-tab-menu {
 
 .business-footer {
   margin-top: -5px;
-  background-color: RGBA(240, 240, 240, 1); }
+  background-color: RGBA(240, 240, 240, 1);
+  overflow: hidden; }
   .business-footer ul {
     margin: 0;
     padding: 0;
