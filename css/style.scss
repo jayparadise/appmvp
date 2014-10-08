@@ -331,6 +331,7 @@ a.active-tab-menu {
 .calendar-event {
 	position: relative;
 	background-color: $main-color;
+	margin-bottom: 20px;
 	img {
 		width: 100%;
 	}
@@ -339,7 +340,7 @@ a.active-tab-menu {
 .calendar-date-text {
 	text-align: center;
 	color: $tab-color;
-	margin: 0;
+	margin: 10px 0 0 0;
 	padding: 5px;
 	z-index: 100;
 }
@@ -363,9 +364,9 @@ a.active-tab-menu {
 
 .calendar-event .event-text-container {
 	background-color: $background-color;
-	margin: 10px;
+	margin: 0 10px;
 	@media (max-width: $responsive-width-medium) {
-		margin: 10px 0;
+		margin: 0;
 	}
 }
 

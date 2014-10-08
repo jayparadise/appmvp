@@ -263,14 +263,15 @@ a.active-tab-menu {
 
 .calendar-event {
   position: relative;
-  background-color: white; }
+  background-color: white;
+  margin-bottom: 20px; }
   .calendar-event img {
     width: 100%; }
 
 .calendar-date-text {
   text-align: center;
   color: RGBA(0, 116, 162, 1);
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 5px;
   z-index: 100; }
 
@@ -291,10 +292,10 @@ a.active-tab-menu {
 
 .calendar-event .event-text-container {
   background-color: RGBA(220, 220, 220, 1);
-  margin: 10px; }
+  margin: 0 10px; }
   @media (max-width: 736px) {
     .calendar-event .event-text-container {
-      margin: 10px 0; } }
+      margin: 0; } }
 
 .full-image {
   width: 100%;
