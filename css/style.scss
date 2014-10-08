@@ -59,21 +59,24 @@ a {
   a {
   	color: $nav-color;
   }
+  @media (max-width: $responsive-width-medium) {
+	height: 50px;
+	}
 }
 
-.home, .location, .search {
+.menu-icon, .location, .search {
 	position: absolute;
 }
 
-.home, .search {
-	font-size: 2em;
+.menu-icon, .search {
+	font-size: 1.5em;
 	width: 20%;
 	height: 100%;
 	padding: 8px 50px;
 	z-index: 100;
 }
 
-.home {
+.menu-icon {
 	text-align: left;
 	@media (max-width: $responsive-width-medium) {
 		padding-left: 10px;
@@ -149,8 +152,10 @@ a {
     margin: 0;
   }
   .lead {
-  	font-size: 20px;
+  	font-size: 16px;
   	font-weight: normal;
+  	line-height: 1em;
+  	margin: 2px 0;
   }
 }
 
@@ -198,7 +203,7 @@ a {
 
 .business-wrapper {
 	border: 1px solid black;
-	height: 1000px;
+	background-color: $main-color;
 	@media (max-width: $responsive-width-medium) {
 		margin-top: -50px;
 	}
@@ -257,6 +262,8 @@ a {
 
 
 /* Business Page Event Section */
+
+/*
 .clearfix:after {
   content: '.';
   height: 0;
@@ -267,6 +274,7 @@ a {
   overflow: hidden;
   visibility: hidden;
 }
+*/
 
 .tabs-menu {
   background: $tab-color;
@@ -297,21 +305,52 @@ a {
 }
 
 a.active-tab-menu {
-	background-color: $background-color;
+	background-color: $main-color;
 	color: $tab-color;
 }
 
 /* Content in Tabs */
 .tabs {
   display: none;
-  padding: 30px;
-  border: 1px solid red;
 }
+
 .today-tab {
   display: block;
 }
 
+.calendar-event {
+	position: relative;
+	background-color: $main-color;
+	img {
+		width: 100%;
+	}
+}
 
+.calendar-date-text {
+	text-align: center;
+	color: $tab-color;
+	margin: 0;
+	padding: 5px;
+}
 
+.calendar-heart {
+	position: absolute;
+	text-align: right;
+	font-size: 2em;
+	top: 10px;
+	right: 10px;
+	color: $tab-color;
+	@media (max-width: $responsive-width-small) {
+		font-size: 1.25em;
+		top: 8px;
+	}	
+}
 
+.full-image {
+	width: 100%;
+	margin-top: 10px;
+}
 
+.event-text-container {
+	padding: 10px;
+}
