@@ -32,7 +32,7 @@
 <!-- Event Feed Container -->
     <div class="container-fluid site-wrapper">
       <div class="row">
-        <div class="col-md-5 col-sm-7 col-centered business-wrapper">
+        <div class="col-sm-8 col-md-6 col-lg-5 col-centered business-wrapper">
 
 <!-- Business Header -->
         	<div class="business-header">
@@ -40,9 +40,11 @@
 	          	<img src="images/northridge.jpg">
 	          </div>
 	          <div class="text-overlay">
-	          	<h1 class="business-page-name">North Ridge Golf Club</h1>
-	          	<a href="index.html" class="business-header-button back-arrow"><span class="glyphicon glyphicon-chevron-left"></span></a>
-	          	<a href="#" class="business-header-button bell"><span class="glyphicon glyphicon-bell"></span></a>
+          		<div class="business-header-container">
+		          	<h1 class="business-page-name">North Ridge Golf Club</h1>
+		          	<a href="index.html" class="business-header-button back-arrow"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	          		<a href="#" class="business-header-button bell"><span class="glyphicon glyphicon-bell"></span></a>
+							</div>
 	          	<a href="http://www.yelp.com/biz/pine-valley-golf-course-and-pro-shop-southington" target="_blank" class="business-rating"><span class="business-rating-text">23 reviews on yelp</span></a>
 	       		</div>
        		</div>
@@ -53,63 +55,69 @@
 					      <ul>
 					        <li><a href="#" data-tab="tab1">S</a></li>
 					        <li><a href="#" data-tab="tab2">M</a></li>
-					        <li><a href="#" data-tab="tab3">T</a></li>
+					        <li><a href="#" data-tab="tab3" class="active-tab-menu">T</a></li>
 					        <li><a href="#" data-tab="tab4">W</a></li>
 					        <li><a href="#" data-tab="tab5">T</a></li>
 					        <li><a href="#" data-tab="tab6">F</a></li>
 					        <li><a href="#" data-tab="tab7">S</a></li>
-					        <li><a href="#" data-tab="tab8"  class="active-tab-menu"><span class="glyphicon glyphicon-calendar"></span></a></li>
+					        <li><a href="#" data-tab="tab8"><span class="glyphicon glyphicon-calendar"></span></a></li>
 					      </ul>
 					    </div> <!-- tabs-menu -->
 					    
-					    <div class="tab1 tabs">
+					    <div class="tab1 tabs sunday">			    	
 								<img src="images/northridgethurs.jpg" alt="" class="full-image">
 					    </div> <!-- .tab1 -->
-					    <div class="tab2 tabs">
-							<p>Monday's specials</p>
+					    <div class="tab2 tabs monday">
+								<div class="event-text-container">
+									<h2>Monday's Event Title</h2>
+									<p>Monday</p>
+								</div>
 					    </div> <!-- .tab2 -->					    
-					    <div class="tab3 tabs">
+					    <div class="tab3 tabs tuesday today-tab calendar">
+								<div class="event-text-container">
+									<h2>Today is National Hot Mulled Cider Day!</h2>
+									<p>Come down to Club 19 for $4.00 Mulled Cider!! For only $2.00 more, add Cinnamon and Sugar Vodka. What a great way to spend your dreary Tuesday!</p>
+								</div>
+					    </div> <!-- .tab3 -->
+					    <div class="tab4 tabs wednesday">
 								<div class="event-text-container">
 									<p>Timmy Maia performing tonight at North Ridge Golf Club from 6pm to 9pm with wine specials all night!
 									<p>And remember. . . </br>50% off our house wines</br>30% off premium wines</br>By the glass or bottle!</p>
 								</div>
-					    </div> <!-- .tab3 -->
-					    <div class="tab4 tabs">
-							<p>Wednesday's specials</p>
-
 					    </div> <!-- .tab4 -->
-					    <div class="tab5 tabs ">
+					    <div class="tab5 tabs thursday">
 								<img src="images/northridgethurs.jpg" alt="" class="full-image">
 					    </div> <!-- .tab5 -->
-					    <div class="tab6 tabs">
+					    <div class="tab6 tabs friday">
 								<img src="images/glowball.jpg" alt="" class="full-image">
 					    </div> <!-- .tab6 -->
-					    <div class="tab7 tabs">
-							<p>Saturday's specials</p>
-
+					    <div class="tab7 tabs saturday">
+								<div class="event-text-container">
+									<h2>Saturday's Event Title</h2>
+									<p>Saturday</p>
+								</div>
 					    </div> <!-- .tab7 -->
-					    <div class="tab8 tabs calendar today-tab">
+					    <div class="tab8 tabs">
 					    	<div class="calendar-event">
-									<h2 class="calendar-date-text">August 26th</h2>
-										<span class="glyphicon glyphicon-heart-empty calendar-heart"></span>
+									<h2 class="calendar-date-text">August 26th</h2><span class="glyphicon glyphicon-heart-empty calendar-heart"></span>
 									<img src="images/pizzafest.jpg" alt="">
 								</div>
 								<div class="calendar-event">
-									<h2 class="calendar-date-text">October 16th</h2>
-										<span class="glyphicon glyphicon-heart-empty calendar-heart"></span>
-										<div class="event-text-container">
-											<p>Timmy Maia performing tonight at North Ridge Golf Club from 6pm to 9pm with wine specials all night!
-											<p>And remember. . . </br>50% off our house wines</br>30% off premium wines</br>By the glass or bottle!</p>
-										</div>
+									<h2 class="calendar-date-text">October 16th</h2><span class="glyphicon glyphicon-heart-empty calendar-heart"></span>
+									<div class="event-text-container">
+										<h2>Today is National Hot Mulled Cider Day!</h2>
+										<p>Come down to Club 19 for $4.00 Mulled Cider!! For only $2.00 more, add Cinnamon and Sugar Vodka. What a great way to spend your dreary Tuesday!</p>
+									</div>
 								</div>
 								<div class="calendar-event">
-									<h2 class="calendar-date-text">November 17th</h2>
-										<span class="glyphicon glyphicon-heart-empty calendar-heart"></span>	
+									<h2 class="calendar-date-text">November 17th</h2><span class="glyphicon glyphicon-heart-empty calendar-heart"></span>	
 									<img src="images/citysteam.jpg" alt="">	
 								</div>
 					    </div> <!-- .tab8 -->
 
-
+							<div class="map">
+								This is going to be where the map is
+							</div>
 
 <!-- End of Page Div's -->
 
