@@ -14,20 +14,31 @@
 
 <!-- Nav Bar -->
 
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+      <h3>Menu</h3>
+      <a href="#">Celery seakale</a>
+      <a href="#">Dulse daikon</a>
+      <a href="#">Zucchini garlic</a>
+      <a href="#">Catsear azuki bean</a>
+      <a href="#">Dandelion bunya</a>
+      <a href="#">Rutabaga</a>
+    </nav>
+
+
     <nav class="nav-header business-page-navbar">
-    	<div class="menu-icon">
-    		<a href="index.html"><span class="glyphicon glyphicon-align-justify"></span></a>
-    	</div>
-			<div class="location">
-				<a href="location.html">
-					<p>Hartford, CT</p>
-					<p class="location-date">Fri. 10/3 <span class="caret"></span></p>
-				</a>
-			</div>
-			<div class="search">
-				<a href="search.html"><span class="glyphicon glyphicon-search"></span>
-				</a>
-			</div>
+      <div class="menu-icon toggle-menu menu-left push-body">
+        <span class="glyphicon glyphicon-align-justify"></span>
+      </div>
+      <div class="location">
+        <a href="location.html">
+          <p>Hartford, CT</p>
+          <p class="location-date">Wed 10/8 <span class="caret"></span></p>
+        </a>
+      </div>
+      <div class="search">
+        <a href="#"><span class="glyphicon glyphicon-search"></span>
+        </a>
+      </div>
     </nav>
 
 <!-- Event Feed Container -->
@@ -161,5 +172,12 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/business_tabs.js"></script>
+    <script src="js/jPushMenu.js"></script>
+    <!--call jPushMenu, required-->
+    <script>
+    jQuery(document).ready(function($) {
+      $('.toggle-menu').jPushMenu();
+    });
+    </script>
   </body>
 </html>

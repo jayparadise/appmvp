@@ -2,6 +2,7 @@
 
 $main-color: rgba(255,255,255,1);
 $nav-background: RGBA(50, 50, 50,.9);
+$sidebar-background: RGBA(100, 100, 100, 1);
 $nav-color: white;
 $background-color: RGBA(220, 220, 220, 1);
 $tab-color: RGBA(0, 116, 162, 1);
@@ -34,19 +35,10 @@ a {
 
 .site-wrapper {
 	padding-top: 50px;
+	width: 100%;
 }
-
-/* For left side, fixed navbar
-.fixed {
-	position: fixed;
-	top: 50px;
-	border: 1px solid green;
-	height: 100%;
-}
- */
 
 /*Nav Bar*/
-
 
 .nav-header {
 	color: $nav-color;
@@ -63,30 +55,30 @@ a {
 	}
 }
 
-
 .menu-icon, .location, .search {
 	position: absolute;
 }
 
 .menu-icon, .search {
 	font-size: 1.5em;
-	width: 20%;
-	height: 100%;
-	padding: 8px 50px;
+	margin: 8px 20px;
 	z-index: 100;
 }
 
 .menu-icon {
-	text-align: left;
+	left: 0;
 	@media (max-width: $responsive-width-medium) {
-		padding-left: 10px;
+		margin-left: 10px;
+	}
+	&:hover {
+		cursor: pointer;
 	}
 }
 
 .search {
 	right: 0;
 	@media (max-width: $responsive-width-medium) {
-		margin-right: 0px;
+		margin-right: 10px;
 	}	
 }
 
@@ -108,6 +100,7 @@ a {
 	font-size: .75em;
 	line-height: 1em;
 }
+
 
 /* Center Feed */
 
@@ -272,8 +265,6 @@ a {
 	right: 10px;
 }
 
-
-
 .business-rating {
 	position: absolute;
 	bottom: 0;
@@ -290,22 +281,6 @@ a {
 	bottom: -2px;
 	left: 90px;
 }
-
-
-/* Business Page Event Section */
-
-/*
-.clearfix:after {
-  content: '.';
-  height: 0;
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-*/
 
 .tabs-menu {
   background: $tab-color;
@@ -414,17 +389,12 @@ a.active-tab-menu {
 	padding: 0;
 }
 
-
-
 .map {
 	width: 100%;
 	height: 250px;
 	border-left: none;
 	border-top: none;
 }
-
-
-
 
 .business-footer {
 		margin-top: -5px;
@@ -445,6 +415,143 @@ a.active-tab-menu {
 		}
 	}
 }
+
+/*Slide Out Navbar*/
+
+.cbp-spmenu {
+	background: $sidebar-background;
+	position: fixed;
+	color: $main-color;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 50px 0;
+	}
+	a {
+		display: block;
+		font-size: 1.5em;
+		&:hover {
+			background: #258ecd;
+		}
+		&:active {
+			background: #afdefa;		
+		}		
+	}
+	.glyphicon {
+		margin-right: 20px;
+	}
+}
+
+.about {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+	overflow-y: scroll;
+	a {
+		border-bottom: 1px solid #258ecd;
+		padding: 20px;
+	}
+}
+
+/* 
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h2 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+} */
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+/*
+.cbp-spmenu-right {
+	right: -240px;
+}
+*/
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+/*
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+*/
+
+/* Horizontal menu that slides from the top or bottom
+
+.cbp-spmenu-top {
+	top: -150px;
+}
+
+.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+ */
+
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
 
 
 
