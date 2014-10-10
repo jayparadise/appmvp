@@ -33,12 +33,11 @@ a {
  */
 /*Nav Bar*/
 .nav-header {
-  background-color: RGBA(50, 50, 50, 0.9);
   color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  background-color: RGBA(50, 50, 50, 0.9);
   height: 50px;
+  position: fixed;
+  width: 100%;
   z-index: 1000; }
   .nav-header a {
     color: white; }
