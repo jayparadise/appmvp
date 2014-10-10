@@ -14,7 +14,6 @@ $responsive-width-small: 414px;
 /* Global */
 
 body {
-  padding-top: 50px;
   background-color: $background-color;
 	@media (max-width: $responsive-width-small) {
 		h1 {font-size: 1.5em;}
@@ -34,6 +33,7 @@ a {
 }
 
 .site-wrapper {
+	padding-top: 50px;
 }
 
 /* For left side, fixed navbar

@@ -9,13 +9,25 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jPushMenu.css" />
+
   </head>
   <body>
 
 <!-- Nav Bar -->
+    <!-- Left menu element-->
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+      <h3>Menu</h3>
+      <a href="#">Celery seakale</a>
+      <a href="#">Dulse daikon</a>
+      <a href="#">Zucchini garlic</a>
+      <a href="#">Catsear azuki bean</a>
+      <a href="#">Dandelion bunya</a>
+      <a href="#">Rutabaga</a>
+    </nav>
 
     <nav class="nav-header">
-      <div class="menu-icon">
+      <div class="menu-icon toggle-menu menu-left push-body">
         <a href="index.html"><span class="glyphicon glyphicon-align-justify"></span></a>
       </div>
       <div class="location">
@@ -193,5 +205,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jPushMenu.js"></script>
+    <!--call jPushMenu, required-->
+    <script>
+    jQuery(document).ready(function($) {
+      $('.toggle-menu').jPushMenu();
+    });
+    </script>
   </body>
 </html>

@@ -2,7 +2,6 @@
 /* Mixins */
 /* Global */
 body {
-  padding-top: 50px;
   background-color: RGBA(220, 220, 220, 1); }
   @media (max-width: 414px) {
     body h1 {
@@ -20,6 +19,9 @@ a {
   a:hover, a:visited, a:active {
     text-decoration: none;
     color: white; }
+
+.site-wrapper {
+  padding-top: 50px; }
 
 /* For left side, fixed navbar
 .fixed {
