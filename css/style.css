@@ -100,7 +100,7 @@ a {
       margin-bottom: 2px; } }
 
 .image img {
-  height: 250px;
+  height: 300px;
   width: 100%;
   -moz-filter: brightness(0.75);
   -o-filter: brightness(0.75);
@@ -109,7 +109,7 @@ a {
   filter: brightness(0.75); }
   @media (max-width: 414px) {
     .image img {
-      height: 175px; } }
+      height: 200px; } }
 
 .text-overlay h1, .text-overlay h2, .text-overlay h3, .text-overlay h4, .text-overlay h5, .text-overlay h6, .text-overlay p {
   margin: 0; }
