@@ -31,7 +31,7 @@ a {
  */
 /*Nav Bar*/
 .nav-header {
-  background-color: RGBA(50, 50, 50, 0.7);
+  background-color: RGBA(50, 50, 50, 0.9);
   color: white;
   position: fixed;
   top: 0;
@@ -148,6 +148,22 @@ a {
     .heart {
       top: 10px;
       right: 10px; } }
+
+/* Sponsored Image */
+.sponsored img {
+  width: 100%;
+  height: auto; }
+
+.sponsored-heading {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.75); }
+
+.sponsor {
+  display: inline; }
 
 /* Business Page Header */
 @media (max-width: 736px) {

@@ -1,7 +1,7 @@
 /* Variables */
 
 $main-color: rgba(255,255,255,1);
-$nav-background: RGBA(50, 50, 50,.7);
+$nav-background: RGBA(50, 50, 50,.9);
 $nav-color: white;
 $background-color: RGBA(220, 220, 220, 1);
 $tab-color: RGBA(0, 116, 162, 1);
@@ -192,6 +192,27 @@ a {
 		right: 10px;
 	}	
 }
+
+/* Sponsored Image */
+
+.sponsored img {
+	width: 100%;
+	height: auto;
+}
+
+.sponsored-heading {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	background-color: rgba(0,0,0,.75);
+}
+
+.sponsor {
+	display: inline;
+}
+
 
 /* Business Page Header */
 
