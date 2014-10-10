@@ -52,6 +52,7 @@ a {
 	color: $nav-color;
 	background-color: $nav-background;
 	height: 50px;
+	position: fixed;
 	width: 100%;
 	z-index: 1000;
   a {

@@ -36,6 +36,7 @@ a {
   color: white;
   background-color: RGBA(50, 50, 50, 0.9);
   height: 50px;
+  position: fixed;
   width: 100%;
   z-index: 1000; }
   .nav-header a {
