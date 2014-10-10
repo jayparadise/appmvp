@@ -430,6 +430,9 @@ a.active-tab-menu {
 	a {
 		display: block;
 		font-size: 1.5em;
+		@media (max-width: $responsive-width-small) {
+			font-size: 1.25em;
+		}
 		&:hover {
 			background: #258ecd;
 		}
@@ -447,19 +450,19 @@ a.active-tab-menu {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+	border-top: 1px solid white;
 }
 
 /* Orientation-dependent styles for the content of the menu */
 
 .cbp-spmenu-vertical {
-	width: 240px;
+	width: 200px;
 	height: 100%;
 	top: 0;
 	z-index: 1000;
 	overflow-y: scroll;
 	a {
-		border-bottom: 1px solid #258ecd;
-		padding: 20px;
+		padding: 20px 30px;
 	}
 }
 
@@ -488,7 +491,7 @@ a.active-tab-menu {
 /* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {
-	left: -240px;
+	left: -200px;
 }
 
 /*
@@ -536,11 +539,11 @@ a.active-tab-menu {
 }
 
 .cbp-spmenu-push-toright {
-	left: 240px;
+	left: 200px;
 }
 
 .cbp-spmenu-push-toleft {
-	left: -240px;
+	left: -200px;
 }
 
 /* Transitions */
