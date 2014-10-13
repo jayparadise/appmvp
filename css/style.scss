@@ -1,10 +1,10 @@
 /* Variables */
 
 $main-color: rgba(255,255,255,1);
-$nav-background: RGBA(50, 50, 50,.9);
-$sidebar-background: RGBA(100, 100, 100, 1);
-$nav-color: white;
+$nav-background: RGBA(255,255,255,.9);
+$sidebar-background: RGBA(100, 100, 100, .9);
 $background-color: RGBA(220, 220, 220, 1);
+$nav-color: rgba(100,100,100,1);
 $tab-color: RGBA(0, 116, 162, 1);
 $responsive-width-medium: 736px;
 $responsive-width-small: 414px;
@@ -63,6 +63,7 @@ a {
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
+	border-bottom: 1px solid gray;
   a {
   	color: $nav-color;
   }
@@ -453,17 +454,18 @@ a.active-tab-menu {
 			font-size: 1.25em;
 		}
 		&:hover {
-			background: #258ecd;
+			background: white;
+			color: $nav-color;
 		}
 		&:active {
-			background: #afdefa;		
+			background: white;
+			color: $nav-color;
 		}		
 	}
 	.glyphicon {
 		margin-right: 20px;
 	}
 }
-
 
 .search-container {
 	text-align: center;
@@ -485,17 +487,43 @@ a.active-tab-menu {
 	height: 100%;
 	top: 0;
 	z-index: 1000;
-	overflow-y: scroll;
+	overflow-y: hidden;
+	box-shadow: inset rgba(0,0,0,.6)0 0 10px 0;
 	a {
 		padding: 20px 30px;
 	}
 }
 
+.cbp-spmenu-vertical-filter {
+	width: 300px;
+	height: 100%;
+	margin-top: 50px;
+	right: 0;
+	z-index: 1000;
+	overflow-y: scroll;
+	padding: 10px;
+	@media (max-width: $responsive-width-medium) {
+		width: 100%;
+	}	
+}
+
+/* Filter Dropdown */
+
+.filter-tags {
+	background-color: blue;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 2px;
+	float: left;	
+}
+
+
+/* Location Change Dropdown */
+
 .cbp-spmenu-horizontal {
 	margin-top: 50px;
 	z-index: 500;
 	overflow: hidden;
-	background-color: rgba(0,0,0,.9);
 	@media (min-width: $responsive-width-medium) {
 	  top: 50%;
 	  left: 50%;
@@ -570,6 +598,7 @@ a.active-tab-menu {
 	width: 50%;
 }
 
+
 /* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {
@@ -594,13 +623,12 @@ a.active-tab-menu {
 
 /* Horizontal menu that slides from the top or bottom */
 
-
 .cbp-spmenu-top {
 	top: -1000px;
 }
 
 .cbp-spmenu-bottom {
-	bottom: -150px;
+	top: -1000px;
 }
 
 .cbp-spmenu-top.cbp-spmenu-open {
@@ -608,7 +636,7 @@ a.active-tab-menu {
 }
 
 .cbp-spmenu-bottom.cbp-spmenu-open {
-	bottom: 0px;
+	top: 0px;
 }
  
 
@@ -636,7 +664,5 @@ a.active-tab-menu {
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
-
-
 
 

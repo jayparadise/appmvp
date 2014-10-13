@@ -40,14 +40,15 @@ a {
 
 /*Nav Bar*/
 .nav-header {
-  color: white;
-  background-color: RGBA(50, 50, 50, 0.9);
+  color: #646464;
+  background-color: RGBA(255, 255, 255, 0.9);
   height: 50px;
   position: fixed;
   width: 100%;
-  z-index: 1000; }
+  z-index: 1000;
+  border-bottom: 1px solid gray; }
   .nav-header a {
-    color: white; }
+    color: #646464; }
   @media (max-width: 736px) {
     .nav-header {
       height: 50px; } }
@@ -351,7 +352,7 @@ a.active-tab-menu {
 
 /*Slide Out Navbar*/
 .cbp-spmenu {
-  background: RGBA(100, 100, 100, 1);
+  background: RGBA(100, 100, 100, 0.9);
   position: fixed;
   color: white; }
   .cbp-spmenu ul {
@@ -365,9 +366,11 @@ a.active-tab-menu {
       .cbp-spmenu a {
         font-size: 1.25em; } }
     .cbp-spmenu a:hover {
-      background: #258ecd; }
+      background: white;
+      color: #646464; }
     .cbp-spmenu a:active {
-      background: #afdefa; }
+      background: white;
+      color: #646464; }
   .cbp-spmenu .glyphicon {
     margin-right: 20px; }
 
@@ -388,15 +391,36 @@ a.active-tab-menu {
   height: 100%;
   top: 0;
   z-index: 1000;
-  overflow-y: scroll; }
+  overflow-y: hidden;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 0 10px 0; }
   .cbp-spmenu-vertical a {
     padding: 20px 30px; }
 
+.cbp-spmenu-vertical-filter {
+  width: 300px;
+  height: 100%;
+  margin-top: 50px;
+  right: 0;
+  z-index: 1000;
+  overflow-y: scroll;
+  padding: 10px; }
+  @media (max-width: 736px) {
+    .cbp-spmenu-vertical-filter {
+      width: 100%; } }
+
+/* Filter Dropdown */
+.filter-tags {
+  background-color: blue;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 2px;
+  float: left; }
+
+/* Location Change Dropdown */
 .cbp-spmenu-horizontal {
   margin-top: 50px;
   z-index: 500;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.9); }
+  overflow: hidden; }
   @media (min-width: 736px) {
     .cbp-spmenu-horizontal {
       top: 50%;
@@ -475,13 +499,13 @@ a.active-tab-menu {
   top: -1000px; }
 
 .cbp-spmenu-bottom {
-  bottom: -150px; }
+  top: -1000px; }
 
 .cbp-spmenu-top.cbp-spmenu-open {
   top: 0px; }
 
 .cbp-spmenu-bottom.cbp-spmenu-open {
-  bottom: 0px; }
+  top: 0px; }
 
 /* Push classes applied to the body */
 .cbp-spmenu-push {
