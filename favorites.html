@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>App MVP</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- Left Sidebar -->
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+      <div class="search-container">
+        <form class="form-search form-inline">
+          <input type="text" class="form-control search-query" placeholder="Search..."/>
+        </form>
+      </div>      
+      <ul>
+        <li><a href="index.html"><span class="glyphicon glyphicon-home active"></span>Home</a></li>
+        <li><a href="upcoming.html"><span class="glyphicon glyphicon-calendar"></span>Upcoming</a></li>
+        <li><a href="map.html"><span class="glyphicon glyphicon-globe"></span>Map View</a></li>        
+        <li><a href="favorites.html"><span class="glyphicon glyphicon-heart"></span>Favorites</a></li>
+        <li><a href="newevent.html"><span class="glyphicon glyphicon-edit"></span>Add Event</a></li>
+      </ul>
+      <a href="about.html" class="about">About</a>
+    </nav>
+
+<!-- Filter Dropdown -->
+    <nav class="cbp-spmenu cbp-spmenu-vertical-filter cbp-spmenu-bottom">
+      <div class="">
+        <h3>Select your preferences to filter what is shown</h3>
+        <ol class="filter-list">
+          <li>
+            <label class="checkbox toggle"><input type="checkbox">
+              <span class="">Show All</span>
+            </label>              
+          </li>
+          <li>
+            <label class="checkbox toggle"><input type="checkbox">
+              <span class="">Food</span>
+            </label>              
+          </li>
+          <li>
+            <label class="checkbox toggle"><input type="checkbox">
+              <span class="">Music</span>
+            </label>              
+          </li>            
+       </ol>
+      </div>
+    </nav>
+
+
+<!-- Nav Bar -->
+    <nav class="nav-header">
+      <div class="menu-icon toggle-menu menu-left push-body">
+        <span class="glyphicon glyphicon-align-justify"></span>
+      </div>
+      <div class="location favorites-nav-text">
+          <p>My Favorites</p>
+      </div>
+      <div class="filter toggle-menu menu-bottom">
+        <span class="glyphicon glyphicon-filter"></span>
+      </div>
+    </nav>
+
+
+<!-- Event Feed Container -->
+    <div class="container-fluid site-wrapper">
+      <div class="row">
+        <div class="col-sm-8 col-md-6 col-lg-5 col-centered">
+
+<!-- New Event -->
+          <div class="favorites-event-header favorites-event-holder">
+            <span>Event Date: </span>
+            <h4>Tuesday, October 14th</h4>
+          </div>
+          <a class="event-holder"href="business-page.html" >
+            <div class="image">
+              <img src="images/skisundown.jpg">
+            </div>
+            <div class="text-overlay">
+              <div class= "event-details">
+                <h2 class="title">Ski Sundown Brewfest</h2>
+                <p class="subtitle lead">35+ CT microbreweries, live music & food</p>
+                <p class="hours">4pm-8pm</p>                
+              </div>
+              <div class="business-details">
+                <h2 class="business-name">Ski Sundown</h2>
+                <p class="distance">44.1 mi &middot New Hartford</p>
+              </div>
+              <div class="tag">
+                <span class="label label-success">Beer</span>
+                <span class="label label-primary">Food</span>                
+                <span class="label label-warning">Music</span>
+              </div>
+              <div class="heart">
+                <span class="glyphicon glyphicon-heart"></span>
+              </div>
+            </div>
+          </a>
+
+<!-- Full Page Flyer Event -->
+          <div class="favorites-event-header favorites-event-holder">
+            <span>Event Date: </span>
+            <h4>October 17th-19th</h4>
+          </div>
+          <a class="event-holder"href="business-page.html" >
+            <div class="full-flyer">
+              <img src="images/appleharvest.jpg">
+            </div>
+            <div class="heart">
+             <span class="glyphicon glyphicon-heart"></span>
+            </div>            
+          </a>
+
+<!-- New Event -->
+          <div class="favorites-event-header favorites-event-holder">
+            <span>Event Date: </span>
+            <h4>Thursday, November 1st</h4>
+          </div>
+          <a class="event-holder"href="business-page.html" >
+            <div class="image">
+              <img src="images/hawks.jpg">
+            </div>
+            <div class="text-overlay">
+              <div class= "event-details">
+                <h2 class="title">All You Can Eat Pizza</h2>
+                <p class="subtitle lead">Just $15 per person</p>
+                <p class="hours">8pm-10pm</p>                
+              </div>
+              <div class="business-details">
+                <h2 class="business-name">Hawk's Landing</h2>
+                <p class="distance">4.8 mi &middot Southington</p>
+              </div>
+              <div class="tag">
+                <span class="label label-primary">Food</span>                
+              </div>
+              <div class="heart">
+                <span class="glyphicon glyphicon-heart"></span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jPushMenu.js"></script>
+    <script src="js/slider.js"></script>    
+    <!--call jPushMenu, required-->
+    <script>
+    jQuery(document).ready(function($) {
+      $('.toggle-menu').jPushMenu();
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>App MVP</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- Left Sidebar -->
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+      <div class="search-container">
+        <form class="form-search form-inline">
+          <input type="text" class="form-control search-query" placeholder="Search..."/>
+        </form>
+      </div>      
+      <ul>
+        <li><a href="index.html"><span class="glyphicon glyphicon-home active"></span>Home</a></li>
+        <li><a href="upcoming.html"><span class="glyphicon glyphicon-calendar"></span>Upcoming</a></li>
+        <li><a href="map.html"><span class="glyphicon glyphicon-globe"></span>Map View</a></li>        
+        <li><a href="favorites.html"><span class="glyphicon glyphicon-heart"></span>Favorites</a></li>
+        <li><a href="newevent.html"><span class="glyphicon glyphicon-edit"></span>Add Event</a></li>
+      </ul>
+      <a href="about.html" class="about">About</a>
+    </nav>
+
+<!-- Location Change Dropdown -->
+    <nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top">
+      <div class="location-search-container input-group input-group-sm">
+        <form class="form-search form-inline choose-location-box">
+          <input type="text" class="form-control search-query" placeholder="Choose Location"/>
+        </form>
+        <div class="clearfix"></div>
+        <p>or</p>
+        <div class="location-select-box">
+          <img src="images/location.png" alt="" class="location-icon">
+          <span class="current-location">Use current location</span>
+        </div>
+        <div class="search-radius-box">
+          <p class="search-radius">Search Radius:</p>
+          <img src="images/slider.png" alt="" class="slider">
+        </div>
+      </div>    
+    </nav>
+
+
+<!-- Filter Dropdown -->
+    <nav class="cbp-spmenu cbp-spmenu-vertical-filter cbp-spmenu-bottom">
+      <div class="">
+        <h3>Select your preferences to filter what is shown</h3>
+        <ol class="filter-list">
+          <li>
+            <label class="checkbox toggle"><input type="checkbox">
+              <span class="">Show All</span>
+            </label>              
+          </li>
+          <li>
+            <label class="checkbox toggle"><input type="checkbox">
+              <span class="">Food</span>
+            </label>              
+          </li>
+          <li>
+            <label class="checkbox toggle"><input type="checkbox">
+              <span class="">Music</span>
+            </label>              
+          </li>            
+       </ol>
+      </div>
+    </nav>
+
+
+<!-- Nav Bar -->
+    <nav class="nav-header">
+      <div class="menu-icon toggle-menu menu-left push-body">
+        <span class="glyphicon glyphicon-align-justify"></span>
+      </div>
+      <div class="location toggle-menu menu-top">
+          <p>Hartford, CT</p>
+          <p class="location-date">Wed 10/8 <span class="caret"></span></p>
+      </div>
+      <div class="filter toggle-menu menu-bottom">
+        <span class="glyphicon glyphicon-filter"></span>
+      </div>
+    </nav>
+
+
+<!-- Event Feed Container -->
+    <div class="container-fluid site-wrapper">
+      <div class="row">
+        <div class="col-sm-8 col-md-6 col-lg-5 col-centered">
+
+<h1>Content Goes here for upcoming events</h1>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jPushMenu.js"></script>
+    <script src="js/slider.js"></script>    
+    <!--call jPushMenu, required-->
+    <script>
+    jQuery(document).ready(function($) {
+      $('.toggle-menu').jPushMenu();
+    });
+    </script>
+  </body>
+</html>

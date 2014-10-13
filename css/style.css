@@ -8,7 +8,7 @@ body {
       font-size: 1.5em; }
     body h2 {
       font-size: 1.25em; }
-    body h3, body .lead {
+    body h3, body h4, body .lead {
       font-size: 1em; }
     body p {
       font-size: .9em; } }
@@ -122,6 +122,10 @@ a {
   @media (max-width: 414px) {
     .image img {
       height: 200px; } }
+
+.full-flyer img {
+  width: 100%;
+  height: auto; }
 
 .text-overlay h1, .text-overlay h2, .text-overlay h3, .text-overlay h4, .text-overlay h5, .text-overlay h6, .text-overlay p {
   margin: 0; }
@@ -518,3 +522,23 @@ a.active-tab-menu {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+
+/* Favorites Page */
+.favorites-event-header {
+  background-color: white;
+  margin: 0;
+  text-align: center; }
+  .favorites-event-header h4 {
+    display: inline-block;
+    font-size: 1.5em; }
+    @media (max-width: 736px) {
+      .favorites-event-header h4 {
+        font-size: 1.25em; } }
+  .favorites-event-header span {
+    font-size: 1.25em; }
+    @media (max-width: 736px) {
+      .favorites-event-header span {
+        font-size: 1em; } }
+
+.favorites-nav-text:hover {
+  cursor: default; }
