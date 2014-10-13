@@ -396,7 +396,7 @@ a.active-tab-menu {
   margin-top: 50px;
   z-index: 500;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.75); }
+  background-color: rgba(0, 0, 0, 0.9); }
   @media (min-width: 992px) {
     .cbp-spmenu-horizontal {
       top: 50%;
@@ -411,7 +411,11 @@ a.active-tab-menu {
 .location-search-container {
   text-align: center;
   padding: 10px 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 1px solid red; }
+  @media (max-width: 736px) {
+    .location-search-container {
+      padding: 10px; } }
   .location-search-container p {
     font-size: 1.5em;
     margin: 0; }
@@ -429,7 +433,8 @@ a.active-tab-menu {
   font-size: 1.5em; }
 
 .search-radius-box {
-  margin: 10px 0; }
+  margin: 10px 0;
+  border: 1px solid yellow; }
 
 .search-radius {
   float: left; }

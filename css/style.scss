@@ -495,7 +495,7 @@ a.active-tab-menu {
 	margin-top: 50px;
 	z-index: 500;
 	overflow: hidden;
-	background-color: rgba(0,0,0,.75);
+	background-color: rgba(0,0,0,.9);
 	@media (min-width: 992px) {
 	  top: 50%;
 	  left: 50%;
@@ -512,6 +512,10 @@ a.active-tab-menu {
 	text-align: center;
 	padding: 10px 20px;
 	margin: 0 auto;
+	border: 1px solid red;
+	@media (max-width: $responsive-width-medium) {
+		padding: 10px;
+	}
 	p {
 		font-size: 1.5em;
 		margin: 0;
@@ -538,6 +542,7 @@ a.active-tab-menu {
 
 .search-radius-box {
 	margin: 10px 0;
+	border: 1px solid yellow;
 }
 
 .search-radius {
