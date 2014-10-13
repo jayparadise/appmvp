@@ -443,7 +443,8 @@ a.active-tab-menu {
 
 .current-location {
   font-size: 1.5em;
-  color: RGBA(0, 120, 254, 1); }
+  color: RGBA(0, 120, 254, 1);
+  vertical-align: middle; }
 
 .search-radius-box {
   margin-top: 15px; }
