@@ -407,6 +407,15 @@ a.active-tab-menu {
   @media (max-width: 736px) {
     .cbp-spmenu-horizontal {
       padding: 0; } }
+  .cbp-spmenu-horizontal h2 {
+    height: 100%;
+    width: 20%;
+    float: left; }
+  .cbp-spmenu-horizontal a {
+    float: left;
+    width: 20%;
+    padding: 0.8em;
+    border-left: 1px solid #258ecd; }
 
 .location-search-container {
   text-align: center;
@@ -432,24 +441,13 @@ a.active-tab-menu {
   font-size: 1.5em; }
 
 .search-radius-box {
-  margin: 10px 0; }
+  margin-top: 10px; }
 
 .search-radius {
   float: left; }
 
 .slider {
   width: 50%; }
-
-.cbp-spmenu-horizontal h2 {
-  height: 100%;
-  width: 20%;
-  float: left; }
-
-.cbp-spmenu-horizontal a {
-  float: left;
-  width: 20%;
-  padding: 0.8em;
-  border-left: 1px solid #258ecd; }
 
 /* Vertical menu that slides from the left or right */
 .cbp-spmenu-left {
