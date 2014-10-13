@@ -428,6 +428,10 @@ a.active-tab-menu {
     font-size: 1.5em;
     margin: 0; }
 
+.choose-location-box {
+  width: 50%;
+  margin: 0 auto; }
+
 .location-select-box img, .location-select-box span {
   cursor: pointer; }
 
@@ -438,13 +442,15 @@ a.active-tab-menu {
   margin: 0; }
 
 .current-location {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  color: RGBA(0, 120, 254, 1); }
 
 .search-radius-box {
-  margin-top: 10px; }
+  margin-top: 15px; }
 
 .search-radius {
-  float: left; }
+  display: inline-block;
+  vertical-align: middle; }
 
 .slider {
   width: 50%; }
