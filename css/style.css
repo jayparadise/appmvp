@@ -411,8 +411,7 @@ a.active-tab-menu {
 .location-search-container {
   text-align: center;
   padding: 10px 20px;
-  margin: 0 auto;
-  border: 1px solid red; }
+  margin: 0 auto; }
   @media (max-width: 736px) {
     .location-search-container {
       padding: 10px; } }
@@ -433,8 +432,7 @@ a.active-tab-menu {
   font-size: 1.5em; }
 
 .search-radius-box {
-  margin: 10px 0;
-  border: 1px solid yellow; }
+  margin: 10px 0; }
 
 .search-radius {
   float: left; }
