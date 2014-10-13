@@ -416,6 +416,11 @@ a.active-tab-menu {
     font-size: 1.5em;
     margin: 0; }
 
+.location-select-box {
+  border: 1px solid red; }
+  .location-select-box img, .location-select-box span {
+    cursor: pointer; }
+
 .location-icon {
   height: 30px;
   width: 30px;
