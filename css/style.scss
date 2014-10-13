@@ -509,13 +509,6 @@ a.active-tab-menu {
 
 /* Filter Dropdown */
 
-.filter-tags {
-	background-color: blue;
-	border-radius: 50%;
-	padding: 10px;
-	margin: 2px;
-	float: left;	
-}
 
 
 /* Location Change Dropdown */
@@ -586,7 +579,7 @@ a.active-tab-menu {
 }
 
 .search-radius-box {
-	margin-top: 15px;
+	margin: 15px 0;
 }
 
 .search-radius {
@@ -664,5 +657,4 @@ a.active-tab-menu {
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
-
 

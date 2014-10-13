@@ -409,13 +409,6 @@ a.active-tab-menu {
       width: 100%; } }
 
 /* Filter Dropdown */
-.filter-tags {
-  background-color: blue;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 2px;
-  float: left; }
-
 /* Location Change Dropdown */
 .cbp-spmenu-horizontal {
   margin-top: 50px;
@@ -472,7 +465,7 @@ a.active-tab-menu {
   vertical-align: middle; }
 
 .search-radius-box {
-  margin-top: 15px; }
+  margin: 15px 0; }
 
 .search-radius {
   display: inline-block;
