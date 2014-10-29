@@ -175,18 +175,18 @@ a {
   }
 }
 
-.event-details {
+.event-details, .business-details {
 	position: absolute;
-	top: 10px;
 	left: 10px;
 	width: 85%;
 }
 
+.event-details {
+	top: 10px;
+}
+
 .business-details {
-	position: absolute;
 	bottom: 10px;
-	left: 10px;
-	width: 70%;
 }
 
 .tag {
@@ -209,20 +209,39 @@ a {
 	}	
 }
 
+
 /* Sponsored Image */
 
-.sponsored img {
-	width: 100%;
-	height: auto;
+.full-image {
+	img {
+		width: 100%;
+		height: auto;
+	}
+	.heart {
+		top: 10px;
+  	@media (max-width: $responsive-width-small) {
+		top: 5px;
+		}
+	}
+	.small-heart {
+		top: 1px;
+	}
 }
 
-.sponsored-heading {
+.sponsored-heading, .sponsored-heading-small {
 	position: absolute;
 	top: 0;
 	width: 100%;
 	text-align: center;
-	padding: 10px;
+	padding: 5px;
 	background-color: rgba(0,0,0,.75);
+}
+
+.sponsored-heading-small {
+	padding: 2px;
+	h2, span {
+		font-size: 1em;	
+	}
 }
 
 .sponsor {
